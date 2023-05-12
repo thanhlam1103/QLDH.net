@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Quanlybanhang" Class="LinqToSqlDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Quanlybanhang.mdf;Integrated Security=True;Connect Timeout=30" SettingsObjectName="QuanLyDonHang.Properties.Settings" SettingsPropertyName="QLDonHangConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.tblHang" Member="tblHangs">
+    <Type Name="tblHang">
+      <Column Name="MaHang" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TenHang" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MaChatLieu" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="SoLuong" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="DonGiaNhap" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="DonGiaBan" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="GhiChu" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
